@@ -1,0 +1,32 @@
+@import 'colors';
+
+.left {
+  @include position(relative);
+
+  @include display(flex);
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 100vh;
+  width: 32vw;
+
+  background: $secondary;
+}
+
+.login-button {
+  @include position(absolute);
+  top: 55%;
+  left: 15%;
+
+  @include transform(translate3d(-50%, -50%, 0));
+}
+
+.right {
+  @include position(relative);
+
+  @include display(block);
+  @include align-items(center);
+  @include justify-content(center);
+  height: 100vh;
+  width: 15vw;
+}
